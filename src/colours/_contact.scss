@@ -1,0 +1,40 @@
+.email-form {
+  width: 75%;
+  #contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-items: flex-end;
+    label{
+      width: 50%;
+    }
+    input {
+      margin-bottom: 1rem;
+      width: 50%;
+      height: 1.65rem;
+    }
+    textarea{
+      margin-bottom: 1rem;
+    }
+    input:invalid, textarea:invalid {
+      border: 0.15rem solid red;
+    }
+    input:valid , textarea:valid{
+      border: 0.15rem solid black;
+    }
+
+    input[type="submit"]{
+      width: 20%;
+    }
+  }
+  .success-message {
+    color: green;
+  }
+
+  .contact-image {
+    width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+}

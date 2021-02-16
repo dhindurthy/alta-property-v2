@@ -1,0 +1,74 @@
+.menu {
+  color: black;
+  font-weight: bold;
+  &:hover {
+    color: #e3000c;
+  }
+ 
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    li{
+      margin-right: 20px;
+      color: black;
+      font-weight: bold;
+      &:hover {
+        color: #e3000c;
+      }
+      cursor: pointer;
+      .li-presentation {
+        padding: 0.5rem;
+      }
+    }
+  }
+  
+  select, option {
+    color: black;
+    font-weight: bold;
+    background-color: #ffcccc;
+    width: 6rem;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    &:hover {
+      color: #e3000c;
+    }
+  }
+}
+.select-component{
+  display: flex;
+  flex-direction: column;
+  // margin-top: 22.5px;
+  width: 100%;
+    button{
+      padding: 0.5rem;
+      margin-top: 0;
+      color: black;
+      font-weight: bold;
+      border: none;
+      font-size: 1rem;
+      background-color: #ffcccc;
+      cursor: pointer;
+      border: none;
+      &:hover {
+        color: #e3000c;
+      }
+    } 
+  
+  .menu-list {
+    height: 15rem;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    z-index: 1;
+    top: 3.5rem;
+    padding: 0.5rem;
+    padding-top: 1.75rem;
+    // opacity: 0;
+    background-color: #ffcccc;
+  }
+}

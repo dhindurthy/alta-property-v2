@@ -1,2 +1,2 @@
-# alta-property-v2
+# alta-prop
 Created with CodeSandbox

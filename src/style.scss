@@ -1,0 +1,157 @@
+@import 'colours/_menu.scss';
+@import 'colours/_about.scss';
+@import 'colours/_carousel.scss';
+@import 'colours/_servicearea.scss';
+@import 'colours/_contact.scss';
+@import 'colours/_allservices.scss';
+
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0px;
+  li{
+    margin-right: 20px;
+  }
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem;
+  &:hover {
+    color: #e3000c;
+    img {
+      color: black;
+    }
+  }
+}
+.App {
+  // border: 0.1px solid black;
+  // overflow-x: 0;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffcccc;
+    .logo {
+      height: 85px;
+      width: 210px;
+    }
+  
+}
+
+@media only screen and (min-width: 600px) {//600px and above
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 100%;
+  grid-template-rows: 9% 83% 8%;
+  grid-template-areas:
+    "header header header header header"
+    "main main main main main"
+    "footer footer footer footer footer";
+
+  justify-content: center;
+}
+
+header {
+  grid-area: header;
+  /* background-color: aqua; */
+}
+footer {
+  grid-area: footer;
+  /* background-color: brown; */
+}
+main {
+  grid-area: main;
+  overflow-y: scroll;
+  display: flex;
+  justify-content: center;
+}
+}
+
+
+@media only screen and (max-width: 600px) {//600px and below
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu {
+      ul {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-left: 0px;
+        li{
+          margin-top:0.75rem;
+        }
+    }
+  }
+  .select-component{ 
+    margin-top: 0;
+    align-items: flex-start;
+    button {
+      padding-left: 0
+    }
+  }
+
+  // .email-form .about-page .service-page {
+  //   width: 75%;
+  // }
+}
+.demo-image {
+  width: 400px !important;
+  height: 350px;
+  background-color: lightcyan
+}
+
+.body {
+  margin-top: 20px;
+}
+.footer {
+  margin-top: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffcccc;
+  padding-left: 10px;
+
+  .question-phone{
+    .phone-num{
+      margin-left: 0.25rem;
+      color: #e3000c;
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.h2-content {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  color: #e3000c;
+  hr {
+    width: 30%;
+    background-color: #e3000c;
+    height: 4px;
+    border: none;
+  }
+}
+
+.articles-main {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  article {
+    background-color: #ffcccc;
+    h3 {
+      color: #e3000c;
+    }
+    width: 40%;
+    padding: 1.5rem;
+  }
+}
